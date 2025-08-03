@@ -1,6 +1,6 @@
 Termux:
 pkg update && pkg upgrade -y
 pkg install python git -y
-https://github.com/msaputraa/TheRaa_D3F4C3.W3B/
+git clone https://github.com/msaputraa/TheRaa_D3F4C3.W3B
 cd TheRaa_D3F4C3.W3B
 python main.py
