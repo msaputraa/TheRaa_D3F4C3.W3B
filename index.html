@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HACKED</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: red;
+      font-family: 'Share Tech Mono', monospace;
+      overflow: hidden;
+    }
+    .glitch {
+      font-size: 3em;
+      text-align: center;
+      margin-top: 20vh;
+      animation: flicker 1s infinite;
+      position: relative;
+    }
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background: black;
+      overflow: hidden;
+    }
+    .glitch::before {
+      left: 2px;
+      text-shadow: -2px 0 red;
+      top: -2px;
+    }
+    .glitch::after {
+      left: -2px;
+      text-shadow: -2px 0 blue;
+      top: 2px;
+    }
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0;
+      }
+    }
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 160px;
+      filter: drop-shadow(0 0 10px red);
+    }
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="https://i.ibb.co/Zz6JkVP/hacker-logo.png" alt="Hacked">
+  <div class="glitch" data-text="SYSTEM BREACHED">SYSTEM BREACHED</div>
+  <div class="footer">No System is Safe</div>
+
+  <audio autoplay loop>
+    <source src="https://www.myinstants.com/media/sounds/windows-xp-error.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
